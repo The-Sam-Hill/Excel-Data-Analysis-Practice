@@ -13,5 +13,5 @@ I hope you enjoy!
 ## Spreadsheet Functions to Organize Data
 This is the first of three quizes that required me to complete a spreadsheet <br />
 
-####Assuming you want the formula in H2 to always reference the cell directly to its left, correct the formula.  Once the formula is fixed, copy the formula down the column <br />
+#### Assuming you want the formula in H2 to always reference the cell directly to its left, correct the formula.  Once the formula is fixed, copy the formula down the column <br />
 This quest
