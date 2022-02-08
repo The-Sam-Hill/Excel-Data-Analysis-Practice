@@ -34,3 +34,6 @@ The next step wanted me to calculate the total sales for just the "Medium" order
 =SUMIF(I2:I2103,"Medium", J2:J2103)
 ```
 As you can see it will add together all the `Sales (J2:J2103)` **_IF_** the condition of `"Medium"` from cell range `I2:I2103` was met in the `Expanded Order Type` column. This brings back a value of `$275,880.24` to answer the question being asked.
+
+### 3. Create the formula from the previous question and copy the formula down to all the rows.  How many orders will have a discount applied? 
+This is a follow-up question asking what type of formula would answer "The company gives a 1% discount on any Extra Large or larger orders.  In the “Discount” column, create a formula that returns 0.01 if the “Expanded Order Type” is Extra Large, XX Large, or XXX Large, and returns No Discount otherwise.
