@@ -1,6 +1,6 @@
 # Excel-Data-Analysis-Practice
-This repository contains problems completed from multiple tests using different Excel functions, tables, and tests.
-In this Repo, I plan to practice different skills and refine my story-telling through data exploration in Excel and by using markdown files like this on in GitHub.
+This repository contains problems completed from multiple tests using different Excel functions, tables, and graphs.
+In this Repo, I plan to practice different skills and refine my story-telling and documentation through data exploration in Excel and by using markdown files like this on in GitHub.
 The three different test I will be using will cover these topics:
 
 * Spreadsheet Functions to Organize Data
@@ -8,6 +8,7 @@ The three different test I will be using will cover these topics:
 * Advanced Graphing and Charting
 
 I will not be upload the entire test to this Repo. I will simply be using questions that required me to manipulate data on the spreadsheets and create formulas. Also, for naming convention any file with *Raw* in the file name is the **Original** file. All other files are the completed files. <br />
+You can check out my LinkedIn profile by [clicking here](https://www.linkedin.com/in/william-hill-3ab051135/)
 I hope you enjoy!
 
 ## Spreadsheet Functions to Organize Data
