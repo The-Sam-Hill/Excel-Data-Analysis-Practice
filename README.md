@@ -33,4 +33,4 @@ The next step wanted me to calculate the total sales for just the "Medium" order
 ```
 =SUMIF(I2:I2103,"Medium", J2:J2103)
 ```
-As you can see it will add together all the `Sales` from column `J` **_if_** the condition of `"Medium"` was met in the `Expanded Order Type` column. This brings back a value of `$275,880.24` to answer the question being asked.
+As you can see it will add together all the `Sales` from column `J` **_IF_** the condition of `"Medium"` was met in the `Expanded Order Type` column. This brings back a value of `$275,880.24` to answer the question being asked.
