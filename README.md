@@ -8,7 +8,7 @@ The three different test I will be using will cover these topics:
 * Advanced Graphing and Charting
 
 I will not be upload the entire test to this Repo. I will simply be using questions that required me to manipulate data on the spreadsheets and create formulas. Also, for naming convention any file with *Raw* in the file name is the **Original** file. All other files are the completed files. <br />
-You can check out my LinkedIn profile by [clicking here](https://www.linkedin.com/in/william-hill-3ab051135/) <br />
+You can check out my LinkedIn profile by [clicking here](https://www.linkedin.com/in/william-hill-3ab051135/). <br />
 I hope you enjoy!
 
 ## Spreadsheet Functions to Organize Data
