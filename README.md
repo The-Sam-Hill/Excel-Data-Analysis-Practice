@@ -25,7 +25,12 @@ The final formula should look like this:
 After this, you can simply double-click the fill handle to copy the formula to the bottom of your table.
 
 ### 2. Using your newly created “Expanded Order Type” column, calculate the total “Sales” for all orders of “Medium” type (rounded to 2 decimal places).
-In a previous question, the test asked me what type of function would return a type value from **Lookup Table 1** in cells `A2:B12`. The test wanted me to create this formula in cell `I2` under the column name **Expanded Order Type**. I decided that the`VLOOKUP` formula would be the best formula for this problem. With this information, I created this formula:
+In a previous question, the test asked me what type of function would return a "type" value from **Lookup Table 1** in cells `A2:B12`. The test wanted me to create this formula in cell `I2` under the column name **Expanded Order Type**. I decided that the`VLOOKUP` formula would be the best formula for this problem. With this information, I created this formula:
 ```
 =VLOOKUP(G2,$A$3:$B$12,2,TRUE)
 ```
+The next step wanted me to calculate the total sales for just the "Medium" order type. This type of question requires a conditional response and using a simple `SUM` function would require even more work to get the answer you are looking for. For this, a `SUMIF` function would be the perfect formula for this question. In cell `I2104` of the `Store-Sales-2012` file, you can see that I created that `SUMIF` function to answer this question. The formula used was:
+```
+=SUMIF(I2:I2103,"Medium", J2:J2103)
+```
+As you can see it will add together all the `Sales` from column `J` if the condition of `"Medium"` was met in the `Expanded Order Type` column. This brings back a value of `$275,880.24` to answer the question being asked.
