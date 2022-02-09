@@ -75,6 +75,7 @@ And for the `Sales with Discount` column, I created this in Cell `L2104`
 =SUM(L2:L2103)
 ```
 <br />
+
 then we can create a basic subtraction formula by using this in Cell `J2108`
 ```
 =J2104-L2104
