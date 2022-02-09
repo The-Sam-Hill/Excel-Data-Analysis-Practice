@@ -50,4 +50,10 @@ Here is my formula used in cell `K2104`:
 ```
 =COUNTIF(K2:K2103,0.01)
 ```
-I used this formula because it would count all the cells in the given range with `0.01` entered. I used the range from the `Discount` coulumn because that is what the question was asking. So, what I am trying to tell Excel to do is to **_Count_** the cell in range `K2:K2103` **_IF_** `0.01` was the value entered in the cell.
+I used this formula because it would count all the cells in the given range with `0.01` entered. I used the range from the `Discount` coulumn because that is what the question was asking. So, what I am trying to tell Excel to do is to **_COUNT_** the cell in range `K2:K2103` **_IF_** `0.01` was the value entered in the cell.
+
+### 5. Create a formula in the “Sales with Discount” column and copy it down to all the rows.  What is the impact of the discount on total sales in 2012?  In other words, what is the difference between the sum of the “Sales” and the sum of the “Sales with Discount” (rounded to 2 decimal places)?
+The first part of this question was pretty easy to complete. I came up with a basic formula to answer this:
+```
+Sales with Discount = Sales – (Sales * Discount)
+```
