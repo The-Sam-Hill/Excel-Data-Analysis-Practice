@@ -12,7 +12,7 @@ You can check out my LinkedIn profile by [clicking here](https://www.linkedin.co
 I hope you enjoy!
 
 ## Spreadsheet Functions to Organize Data
-<br />
+
 ### 1. Assuming you want the formula in H2 to always reference the cell directly to its left, correct the formula.  Once the formula is fixed, copy the formula down the column <br />
 
 This question was requiring me to fix the formula located on cell `H2` from the `Store-Sales-2012 Raw` spreadsheet. This is a simple fix! As you can see in the formula <br />
