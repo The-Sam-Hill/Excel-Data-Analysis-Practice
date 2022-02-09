@@ -83,3 +83,8 @@ then we can create a basic subtraction formula by using this in Cell `J2108`
 ```
 Now We have the Answer to the question!
 
+### 6. Currently, customers are responsible for paying the shipping costs.  The sales team suggests that customers really dislike paying shipping costs, and that offering “free shipping” instead of the 1% discount would likely increase sales.  Create a formula for the “Sales with Free Shipping” column that subtracts the “Shipping Cost” from the “Sales” only if the “Expanded Order Type” is Extra Large, XX Large, or XXX Large.  Copy the formula down to all the rows.  What would total 2012 sales have been if the company had offered free shipping instead of the 1% discount (rounded to 2 decimal places)?
+Ok, there is a lot of information to absorb with the question, but lets break it down. There are two objectives in this question we need to complete to come to a conclusion.
+First we need to create a formula similar to the formula to the formula that decided if there were to be a 1% discount or if no discount would apply. This question will have a formula that is structured differently to achieve similar results.<br />
+
+We want to create a formula that subtracts the Shipping costs found in `Shipping Cost` column from thes sales in the `Sales` Column. 
