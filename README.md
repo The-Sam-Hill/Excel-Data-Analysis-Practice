@@ -87,4 +87,8 @@ Now We have the Answer to the question!
 Ok, there is a lot of information to absorb with the question, but lets break it down. There are two objectives in this question we need to complete to come to a conclusion.
 First we need to create a formula similar to the formula to the formula that decided if there were to be a 1% discount or if no discount would apply. This question will have a formula that is structured differently to achieve similar results.<br />
 
-We want to create a formula that subtracts the Shipping costs found in `Shipping Cost` column from thes sales in the `Sales` Column. 
+We want to create a formula that subtracts the Shipping costs found in `Shipping Cost` column from thes sales in the `Sales` Column. To do this, we will need to create an `IF` formula with multiple `IF` statements nested within it. I came up with this formula for the first part of this answer:
+```
+=IF(I2="Extra Large", J2-P2, IF(I2="XX Large", J2-P2, IF(I2="XXX Large", J2-P2,J2)))
+```
+Ok, now we lets break this down. At first glance, it looks like a lot, but in theory it is not so bad. The first part of the formula, `(I2="Extra Large", J2-P2`, is pretty easy to understand after looking at some of the previous formulas we created. So what it is say is **_IF_** `I2`, or the cell value in the `Expanded order type`, *Equals* `"Extra Large"`, then we subtract `Sales`**-**`Shipping Costs` (`J2-P2` of the formula). If that is not satisifed then we move on to the next `IF` formula. We will rinse and repeat the steps again for `XX Large` and `XXX Large` parts of the of the formula. 
