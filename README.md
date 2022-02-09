@@ -57,3 +57,25 @@ The first part of this question was pretty easy to complete. I came up with a ba
 ```
 Sales with Discount = Sales – (Sales * Discount)
 ```
+If you notice with is calculation, I will have string values in the  `Discount` portion of the formula, which you cannot not quantify in Excel. To prevent the formula returning an error message, we will need to create another `IFERROR` formula to prevent an error being returned. So for this, I created this:
+```
+=IFERROR(J2-(J2*K2),J2)
+```
+Lets break it down! <br />
+This will first calculate `Sales * Discount`, then it will subtract that from the corresponding cell in the `Sales` column. Now, since some cells in the `Discount` column have `"No Disc."` in the cell, it would produce an error becuase you cannot quantify a string function. This is where the `IFERROR` saves the day again! If my formula was not met, it will simple return the value from `Sales` column. <br /> <br />
+The second portion of this question wants us to discover how much the discount cut into total sales. You can do this by simply using a `SUM` function for both the `Sales` and `Sales with Discount` columns. <br />
+For the `Sales` column, I created this in Cell `J2104`:
+```
+=SUM(J2:J2103)
+```
+<br />
+And for the `Sales with Discount` column, I created this in Cell `L2104`:
+```
+=SUM(L2:L2103)
+```
+<br />
+then we can create a basic subtraction formula by using this in Cell `J2108`:
+```
+=J2104-L2104
+```
+Now We have the Answer to the question!
