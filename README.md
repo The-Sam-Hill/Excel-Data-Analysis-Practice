@@ -64,6 +64,7 @@ If you notice with is calculation, I will have string values in the  `Discount` 
 Lets break it down! <br />
 This will first calculate `Sales * Discount`, then it will subtract that from the corresponding cell in the `Sales` column. Now, since some cells in the `Discount` column have `"No Disc."` in the cell, it would produce an error becuase you cannot quantify a string function. This is where the `IFERROR` saves the day again! If my formula was not met, it will simple return the value from `Sales` column. <br /> <br />
 The second portion of this question wants us to discover how much the discount cut into total sales. You can do this by simply using a `SUM` function for both the `Sales` and `Sales with Discount` columns. <br />
+
 For the `Sales` column, I created this in Cell `J2104`:
 ```
 =SUM(J2:J2103)
