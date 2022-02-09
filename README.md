@@ -7,7 +7,7 @@ The three different test I will be using will cover these topics:
 * Introduction to Filtering, Pivot Tables, and Charts
 * Advanced Graphing and Charting
 
-I will not be upload the entire test to this Repo. I will simply be using questions that required me to manipulate data on the spreadsheets and create formulas. Also, for naming convention any file with *Raw* in the file name is the **Original** file. All other files are the completed files. <br />
+I will not be uploading the entire test to this Repo. I will simply be using questions that required me to manipulate data on the spreadsheets and create formulas. Also, for naming convention any file with *Raw* in the file name is the **Original** file. All other files are the completed files. <br />
 You can check out my LinkedIn profile by [clicking here](https://www.linkedin.com/in/william-hill-3ab051135/). <br />
 I hope you enjoy!
 
@@ -92,3 +92,40 @@ We want to create a formula that subtracts the Shipping costs found in `Shipping
 =IF(I2="Extra Large", J2-P2, IF(I2="XX Large", J2-P2, IF(I2="XXX Large", J2-P2,J2)))
 ```
 Ok, now we lets break this down. At first glance, it looks like a lot, but in theory it is not so bad. The first part of the formula, `(I2="Extra Large", J2-P2`, is pretty easy to understand after looking at some of the previous formulas we created. So what it is saying is **_IF_** `I2`, or the cell value in the `Expanded order type`, *Equals* `"Extra Large"`, then we subtract `Sales`**-**`Shipping Costs` (`J2-P2` of the formula). If that is not satisifed then we move on to the next `IF` formula. We will rinse and repeat the steps again for `XX Large` and `XXX Large` parts of the of the formula. Now, if none of conditions are met then we want it to return just the number in the `Sales` column show that the end of the formula, which is represented by `J2` at the end of the formula. New we will close of the formula with `)))` since that is how many open parenthesis we have.
+<br />
+
+Now that we have the first part of the qeustion completed, we can now move on to the second part of the question to get our final answer! <br />
+All we have do now is create a basic `SUM` function to finish the problem and it can created like so:
+```
+=SUM(M2:M2103)
+```
+This will give us a total of `$3,712,048.65` to answer the question.
+
+### 7. How much money would the company have saved in 2012 if it had offered free shipping instead of the 1% discount on Extra Large, XX Large, or XXX Large orders (rounded to 2 decimal places)?
+This might be the easiest formula we have created. It will be a simple subtraction formula like so:
+```
+Money Saved = Sales with Free Shipping - Sales with Discount
+```
+Since we already have sum functions for both of these columns (`L2104` for `Sales with discount` and `M2104` for `Sales with Free Shipping`) from previous questions we can create this formula for the answer:
+```
+=M2104-L2104
+```
+This will give us a savings amount of `$9,008.97`
+
+### 8. What would 2012 total “Sales” have been if the company had offered free shipping on any order shipped by Delivery Truck, and no additional discounts (rounded to 2 decimal places)?
+First, we will need to create a new column. I named mine `Shipping cost discount for delivery truck`, but it does not have to be named like that and could easily be shortened down, but I digress. <br />
+Now back to the formula, we will need to create a formula that subtracts the Shipping Cost from Sales if the Shipping Mode is by delivery truck. To do this, the `IF` formula will be the easiest way to do this. Here is what I came up with:
+```
+=IF(N2="Delivery Truck",J2-P2,J2)
+```
+
+Here is the analysis. So **_IF_** `Ship Mode`**=** `"Delivery Truck"` then we subtract `Sales`**-**`Shipping Cost`. Then, **_IF_** `Ship Mode`**_<>_** `"Delivery Truck"` then return `Sales`! <br />
+
+Now that we have done that we can create a `SUM` formula to give us the answer to our question. <br />
+That answer looks like this:
+```
+=SUM(O2:O2103)
+```
+And this can be found in cell `O2105`! <br /> <br />
+
+That is all for this test! I hope you like my breakdown of my thought process for this test. Next I will be breaking down the next test, Introduction to Filtering, Pivot Tables, and Charts, soon!
