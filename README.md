@@ -36,3 +36,10 @@ The next step wanted me to calculate the total sales for just the "Medium" order
 As you can see it will add together all the `Sales (J2:J2103)` **_IF_** the condition of `"Medium"` from cell range `I2:I2103` was met in the `Expanded Order Type` column. This brings back a value of `$275,880.24` to answer the question being asked.
 
 ### 3. The company gives a 1% discount on any Extra Large or larger orders.  In the “Discount” column, create a formula that returns 0.01 if the “Expanded Order Type” is Extra Large, XX Large, or XXX Large, and returns No Discount otherwise.
+For this question, I decided to go with an `IFERROR` formula with a nested `VLOOKUP` formula. I came up with the following formula:
+```
+=IFERROR(VLOOKUP(I2,$A$14:$B$16,2,FALSE), "No Disc")
+```
+Now lets break it down! <br />
+First I created a small table in cells `A14:B16` to reference in the `VLOOKUP` portion of the formula. After doing this, we can get started on creating the formula. I decided to approach the building of the formula in a similar fashion when creating a SQL query with a subquery. I built the `VLOOKUP` formula first. Starting off, I used `I2` to for my lookup value. Next, I used my table I created on cells `A14:B16` and made them absolute so that would not change when filling down the formula. the `2` represents the value I want returned if the condition was met. If it was not met, this is where the `IFERROR` formula comes in to play, but I will talk about that in a second. `FALSE` represents an exact match from the `Expanded Order Type` column. <br /> <br />
+Now, here is when `IFERROR` formula steps in. If I were to not have the `IFERROR` formula there and an exact match was not met, the formula would pop out an error that looked like this: `#N/A`. We do not want this becuase the question wants me to return "No Discount" if it was not met.
