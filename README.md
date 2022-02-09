@@ -55,7 +55,7 @@ The first part of this question was pretty easy to complete. I came up with a ba
 ```
 Sales with Discount = Sales – (Sales * Discount)
 ```
-If you notice with is calculation, I will have string values in the  `Discount` portion of the formula, which you cannot not quantify in Excel. To prevent the formula returning an error message, we will need to create another `IFERROR` formula to prevent an error being returned. So for this, I created this:
+If you notice within this calculation, I will have string values in the  `Discount` portion of the formula, which you cannot not quantify in Excel. To prevent the formula returning an error message, we will need to create another `IFERROR` formula to prevent an error being returned. So for this, I created this:
 ```
 =IFERROR(J2-(J2*K2),J2)
 ```
