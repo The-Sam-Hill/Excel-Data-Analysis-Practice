@@ -69,6 +69,7 @@ For the `Sales` column, I created this in Cell `J2104`:
 =SUM(J2:J2103)
 ```
 <br />
+
 And for the `Sales with Discount` column, I created this in Cell `L2104`
 ```
 =SUM(L2:L2103)
