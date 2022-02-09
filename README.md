@@ -93,7 +93,7 @@ Ok, lets break this down. At first glance, it looks like a lot, but in theory it
 <br />
 
 Now that we have the first part of the qeustion completed, we can now move on to the second part of the question to get our final answer! <br />
-All we have do now is create a basic `SUM` function to finish the problem and it can created like so:
+All we have do now is create a basic `SUM` function to finish the problem and it can be created like so:
 ```
 =SUM(M2:M2103)
 ```
